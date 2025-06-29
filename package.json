@@ -1,0 +1,34 @@
+{
+  "name": "transcribemd",
+  "version": "1.0.0",
+  "description": "AI-Powered Medical Transcription & Prescription Generation",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "medical",
+    "transcription",
+    "prescription",
+    "ai",
+    "healthcare",
+    "speech-recognition",
+    "doctor",
+    "patient"
+  ],
+  "author": "Drei010",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Drei010/TranscribeMD.git"
+  },
+  "homepage": "https://drei010.github.io/TranscribeMD/",
+  "bugs": {
+    "url": "https://github.com/Drei010/TranscribeMD/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
