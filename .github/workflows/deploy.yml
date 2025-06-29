@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy TranscribeMD to GitHub Pages
 
 on:
   push:
