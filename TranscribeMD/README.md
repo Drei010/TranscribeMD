@@ -1,5 +1,7 @@
 # TranscribeMD
 
+[Live Site: https://drei010.github.io/TranscribeMD/](https://drei010.github.io/TranscribeMD/)
+
 A web-based application that records doctor-patient conversations, provides real-time transcription, and automatically generates prescription summaries.
 
 ## Features
