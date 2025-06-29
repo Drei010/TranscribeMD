@@ -78,10 +78,9 @@ class AudioRecorder {
 
     // Start recording
     async start() {
-        if (!this.mediaRecorder) {
-            const initialized = await this.init();
-            if (!initialized) return false;
-        }
+        // Always re-initialize to get a fresh stream
+        const initialized = await this.init();
+        if (!initialized) return false;
 
         try {
             this.audioChunks = [];
@@ -106,11 +105,14 @@ class AudioRecorder {
             this.isRecording = false;
             this.isPaused = false;
             this.stopTimer();
-            
+
             // Stop all tracks to release microphone
             if (this.stream) {
                 this.stream.getTracks().forEach(track => track.stop());
             }
+            // Reset for next session
+            this.mediaRecorder = null;
+            this.stream = null;
         }
     }
 
