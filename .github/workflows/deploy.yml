@@ -38,7 +38,7 @@ jobs:
       if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: .
+        publish_dir: ./TranscribeMD
         publish_branch: gh-pages
         force_orphan: true
         user_name: 'github-actions[bot]'
@@ -47,7 +47,7 @@ jobs:
         
     - name: Add .nojekyll file
       run: |
-        touch .nojekyll
-        git add .nojekyll
+        touch ./TranscribeMD/.nojekyll
+        git add ./TranscribeMD/.nojekyll
         git commit -m "Add .nojekyll file" || true
         git push origin gh-pages || true 
